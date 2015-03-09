@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+declare -i i=0
+declare -i fib=0
+declare -i previous=1
+tab=true
+
+
+while read line
+do
+	if [[ $i -eq $fib ]]; then
+		tab=true
+
+		if [[ $i -eq 0 ]]; then
+			fib=1
+		else
+			fib=$((fib + previous))
+			previous=$(( i ))
+		fi
+	fi
+
+	
+	if [ "$tab" = true ]; then
+    	echo -e "$i\t$line"
+	else
+		echo -e "$i$line"
+	fi
+
+	tab=false
+	i=$(( i + 1))
+
+done < $1
