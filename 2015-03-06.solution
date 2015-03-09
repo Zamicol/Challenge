@@ -1,0 +1,2 @@
+ awk -F\: 'BEGIN { print "key:count:occurances" } { b[$1] = b[$1] + 1; a[$1] = a[$1] + $2; sum += $2} END {for (k in a) { print k ":" a[k] ":" b[k]}}' a b
+
