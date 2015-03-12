@@ -1,2 +1,2 @@
 # Challenge
-Zami's, Qbit's and other's daily-ish challenges.  
+Zami's, Qbit's and others' daily-ish challenges.  
