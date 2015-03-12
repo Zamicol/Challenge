@@ -1,0 +1,1 @@
+Write an algorithm that takes an array of any numbers and produces a coresponding array of %'s where 100% is the largest value in the array, and 0% is the lowest value.
